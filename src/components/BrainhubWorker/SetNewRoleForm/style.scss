@@ -1,0 +1,21 @@
+.new-role-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.new-role-input {
+  width: 200px;
+  height: 30px;
+  font-size: 18px;
+}
+
+.new-role-form > button {
+  color:#fff;
+  background:#000;
+  border: none;
+  outline:none;
+  padding: 5px;
+  cursor: pointer;
+  height: 25px;
+}
