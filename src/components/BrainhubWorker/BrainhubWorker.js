@@ -14,6 +14,12 @@ const BrainhubWorker = ({ data, match }) => {
       <img src={`http://localhost:4000/static/${data.teamMember.imgSrcBack}`} alt={data.teamMember.name} />
       <div>{data.teamMember.name}</div>
       <div>{data.teamMember.role}</div>
+      <div className="brainhub-worker__main-skills-label">Main skills:</div>
+      <ul className="brainhub-worker__skills">
+        {data.teamMember.skills.map((skill, index) => (
+          <li key={index}>{skill}</li>
+        ))}
+      </ul>
       <SetNewRoleForm memberId={match.params.id} />
     </div>
   );

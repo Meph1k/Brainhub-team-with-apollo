@@ -8,5 +8,5 @@ export default gql`
       role
       imgSrcBack
     }
-}
+  }
 `;

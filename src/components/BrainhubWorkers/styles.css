@@ -6,6 +6,9 @@
   flex-wrap: wrap;
   list-style-type: none; }
 
+.brainhub-workers__container__team-member {
+  padding-bottom: 20px; }
+
 .brainhub-workers__container__team-member > a {
   text-decoration: none;
   color: black; }

@@ -31,7 +31,10 @@ class SetNewRoleForm extends React.Component {
 
     return (
       <form className="new-role-form" onSubmit={this.handleSubmit}>
-        <input className="new-role-input" onChange={this.handleRoleChange} />
+        <fieldset>
+          <label>Set new role</label>
+          <input className="new-role-input" onChange={this.handleRoleChange} />
+        </fieldset>
         <button type="submit">Submit</button>
       </form>
     );

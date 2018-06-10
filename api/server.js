@@ -20,6 +20,7 @@ const teamSchema = buildSchema(`
     name: String
     role: String
     imgSrcBack: String
+    skills: [String]
   }
 `);
 

@@ -6,3 +6,11 @@
 
 .brainhub-worker__container img {
   align-self: center; }
+
+.brainhub-worker__main-skills-label {
+  padding-top: 20px; }
+
+.brainhub-worker__skills {
+  padding: 10px 0 0 0;
+  margin: 0;
+  list-style-type: none; }
