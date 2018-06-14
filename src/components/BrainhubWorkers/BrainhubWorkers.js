@@ -3,6 +3,7 @@ import { graphql } from 'react-apollo';
 import {
   Link
 } from 'react-router-dom';
+// import BrainhubWorkersCache from '../../services/ApolloCache';
 import BrainhubWorkersQuery from './BrainhubWorkersQuery.js';
 import './styles.css';
 

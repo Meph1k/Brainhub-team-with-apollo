@@ -7,7 +7,7 @@ import cors from 'cors';
 
 const teamSchema = buildSchema(`
   type Query {
-    team: [Team]
+    team(limit: Int): [Team]
     teamMember(id: Int!): Team
   }
 
@@ -24,7 +24,13 @@ const teamSchema = buildSchema(`
   }
 `);
 
-const getTeam = () => team;
+const getTeam = args => {
+  if (args.limit) {
+    return team.slice(0, args.limit);
+  }
+
+  return team;
+};
 const getTeamMemberData = args => team.filter(teamMember => teamMember.id === args.id)[0];
 
 const updateTeamMemberRole = ({id, role}) => {
